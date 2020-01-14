@@ -46,6 +46,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bar.Designer.cs">
+      <DependentUpon>Bar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Computer.cs" />
+    <Compile Include="Dice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dice.Designer.cs">
+      <DependentUpon>Dice.cs</DependentUpon>
+    </Compile>
     <Compile Include="GameMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,13 +71,39 @@
     <Compile Include="GuessNumber.Designer.cs">
       <DependentUpon>GuessNumber.cs</DependentUpon>
     </Compile>
+    <Compile Include="Judge.cs" />
+    <Compile Include="Memory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Memory.Designer.cs">
+      <DependentUpon>Memory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Morra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Morra.Designer.cs">
+      <DependentUpon>Morra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Bar.resx">
+      <DependentUpon>Bar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dice.resx">
+      <DependentUpon>Dice.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GameMainForm.resx">
       <DependentUpon>GameMainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GuessNumber.resx">
       <DependentUpon>GuessNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Memory.resx">
+      <DependentUpon>Memory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Morra.resx">
+      <DependentUpon>Morra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -74,6 +113,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -87,6 +127,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

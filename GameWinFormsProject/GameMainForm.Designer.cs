@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameMainForm));
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonGuessNumber = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -63,35 +63,37 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "C# Game Project";
             // 
-            // button1
+            // buttonGuessNumber
             // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(28, 90);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(130, 45);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "猜數字";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonGuessNumber.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonGuessNumber.BackgroundImage")));
+            this.buttonGuessNumber.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buttonGuessNumber.Location = new System.Drawing.Point(28, 90);
+            this.buttonGuessNumber.Name = "buttonGuessNumber";
+            this.buttonGuessNumber.Size = new System.Drawing.Size(130, 45);
+            this.buttonGuessNumber.TabIndex = 1;
+            this.buttonGuessNumber.Text = "猜數字";
+            this.buttonGuessNumber.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
             this.button2.Location = new System.Drawing.Point(28, 185);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(130, 45);
             this.button2.TabIndex = 2;
-            this.button2.Text = "1A2B";
+            this.button2.Text = "猜拳";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
             this.button3.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
             this.button3.Location = new System.Drawing.Point(28, 280);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(130, 45);
             this.button3.TabIndex = 3;
-            this.button3.Text = "猜拳";
+            this.button3.Text = "擲骰子";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
@@ -126,12 +128,13 @@
             // 
             // button7
             // 
+            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
             this.button7.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
             this.button7.Location = new System.Drawing.Point(233, 280);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(130, 45);
             this.button7.TabIndex = 6;
-            this.button7.Text = "記憶翻牌";
+            this.button7.Text = "記憶翻圖";
             this.button7.UseVisualStyleBackColor = true;
             // 
             // button8
@@ -171,7 +174,7 @@
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(130, 45);
             this.button11.TabIndex = 11;
-            this.button11.Text = "拼圖";
+            this.button11.Text = "射擊遊戲";
             this.button11.UseVisualStyleBackColor = true;
             // 
             // button12
@@ -226,10 +229,6 @@
             // 
             // toolStrip1
             // 
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripLabel1,
-            this.toolStripSeparator1,
-            this.toolStripSeparator2});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(800, 25);
@@ -273,7 +272,7 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonGuessNumber);
             this.Controls.Add(this.label1);
             this.Name = "GameMainForm";
             this.Text = "馬顥心 | C#遊戲專案";
@@ -287,7 +286,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonGuessNumber;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;

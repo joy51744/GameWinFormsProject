@@ -20,7 +20,7 @@ namespace GameWinFormsProject
             int myguess = 0;
             try
             {
-                myguess = int.Parse(txtGuess.Text); //判斷輸入職
+                myguess = int.Parse(textBoxGuess.Text); //判斷輸入值
             }
             catch
             {
